@@ -1,0 +1,58 @@
+Body{
+    height: 100vh;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.earth{
+    
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-image: url('../images/earth.jpg');
+    background-position: center;
+    background-size: 1100px 1100px;
+    float: right;
+    margin-top: -250px;
+    margin-right: -250px;
+    -webkit-animation: rotation 600s infinite linear;
+    z-index: 1;
+}
+
+.Sat{
+    position: absolute;
+  width: 1250px;
+  height: 1250px;
+  border-radius: 50%;         
+  background-image: url('../images/sat2.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  margin-left: -150px;
+  margin-top: -150px;
+  -webkit-animation: rotation2 30s infinite linear;
+ 
+  z-index: 0;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+@-webkit-keyframes rotation2 {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
